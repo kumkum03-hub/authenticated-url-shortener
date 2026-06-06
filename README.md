@@ -5,101 +5,109 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
 ![Mongoose](https://img.shields.io/badge/Mongoose-ODM-red)
 
-## Overview
+Overview
 
-A full-stack URL shortening application built with Node.js, Express.js, and MongoDB. The application generates unique short URLs, stores mappings in MongoDB, and redirects users to the original destination when a shortened URL is accessed.
+Authenticated URL Shortener is a full-stack web application that allows users to create and manage shortened URLs securely.
 
-This project demonstrates backend development concepts including routing, database integration, URL redirection, and unique identifier generation.
+The application includes JWT-based authentication, role-based authorization, URL analytics, and MongoDB integration. Users can generate shortened URLs, view their own links, and track click statistics, while administrators can access all URLs across the system.
 
----
+Features
+Authentication
+User Registration
+User Login
+JWT Authentication
+Cookie-Based Session Management
+Authorization
+Role-Based Access Control
+Admin and Normal User Roles
+Protected Routes
+URL Management
+Generate Short URLs
+Automatic URL Redirection
+User-Specific URL Storage
+MongoDB Persistence
+Analytics
+Click Tracking
+Visit History Logging
+Total Click Count
+Tech Stack
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT
+Cookie Parser
+EJS
+NanoID
+Application Flow
+User creates an account.
+User logs into the application.
+JWT token is generated and stored in cookies.
+User submits a URL.
+Application generates a unique short code.
+URL data is stored in MongoDB.
+User receives a shortened URL.
+When accessed, the application redirects to the original destination.
+Analytics are updated automatically.
+User Roles
+Normal User
+Generate shortened URLs
+View personal URLs
+Track personal URL analytics
+Admin
+View all URLs in the system
+Access administrative URL management features
+Analytics
 
-## Features
+Each URL visit is recorded and stored.
 
-* Generate unique shortened URLs
-* Store original and shortened URLs in MongoDB
-* Redirect users to the original destination
-* Express.js routing
-* MongoDB database integration
-* Unique short code generation
+Tracked information:
 
----
+Visit timestamps
+Total click count
+Screenshots
+Login Page
 
-## Tech Stack
+<img width="375" height="276" alt="image" src="https://github.com/user-attachments/assets/511b1317-8d82-4a49-a695-b4d09a4f9e4b" />
 
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* HTML
-* CSS
-* JavaScript
+Signup Page
 
----
+<img width="383" height="302" alt="image" src="https://github.com/user-attachments/assets/f6cf3e9d-4149-4adf-9b89-0da2ddef3474" />
 
-## How It Works
+URL Dashboard
 
-1. User enters a URL.
-2. Application generates a unique short code.
-3. Original URL and short code are stored in MongoDB.
-4. A shortened URL is returned to the user.
-5. When the shortened URL is visited:
+<img width="542" height="345" alt="image" src="https://github.com/user-attachments/assets/0d62ad03-d7ae-4e48-99ce-dd955b9ad6f3" />
 
-   * The application searches MongoDB.
-   * The original URL is retrieved.
-   * The user is redirected automatically.
+Users stored in database
 
----
+<img width="592" height="630" alt="image" src="https://github.com/user-attachments/assets/f2064b08-14af-41e3-85dd-99d574827955" />
 
-## Example
 
-Original URL:
-
-```text
-https://www.youtube.com/
-```
-
-Generated Short URL:
-
-```text
-http://localhost:8000/url/abc123
-```
-
-When the short URL is opened, the user is redirected to the original website.
-
----
-
-## Installation
+Installation
 
 Install dependencies:
 
-```bash
 npm install
-```
+
+Create a .env file:
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 
 Start the server:
 
-```bash
 npm start
-```
 
-Open the application in your browser:
+Open:
 
-```text
-http://localhost:8000
-```
-
----
-
-## Future Improvements
-
-* Custom URL aliases
-* Click analytics
-* User authentication
-* Expiring links
-* Cloud deployment
-
----
-
-## Author
+http://localhost:8001
+Future Improvements
+Custom URL aliases
+Password hashing using bcrypt
+URL expiration
+Search and filtering
+Dashboard improvements
+Cloud deployment
+Author
 
 Kumkum Kamthan
