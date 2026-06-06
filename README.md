@@ -1,4 +1,4 @@
-# 🔗 URL Shortener
+#  URL Shortener
 
 ![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
 ![Express.js](https://img.shields.io/badge/Express.js-Web_Framework-black)
@@ -7,7 +7,7 @@
 ![JWT](https://img.shields.io/badge/JWT-Authentication-blue)
 ![EJS](https://img.shields.io/badge/EJS-Templating-orange)
 
-## 📖 Overview
+##  Overview
 
 Authenticated URL Shortener is a full-stack web application that allows users to create and manage shortened URLs securely.
 
@@ -15,29 +15,29 @@ The application includes JWT-based authentication, role-based authorization, URL
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 
 - User Registration
 - User Login
 - JWT Authentication
 - Cookie-Based Session Management
 
-### 🛡️ Authorization
+### Authorization
 
 - Role-Based Access Control (RBAC)
 - Admin and Normal User Roles
 - Protected Routes
 
-### 🔗 URL Management
+###  URL Management
 
 - Generate Short URLs
 - Automatic URL Redirection
 - User-Specific URL Storage
 - MongoDB Persistence
 
-### 📊 Analytics
+###  Analytics
 
 - Click Tracking
 - Visit History Logging
@@ -45,7 +45,7 @@ The application includes JWT-based authentication, role-based authorization, URL
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Node.js
 - Express.js
@@ -58,7 +58,7 @@ The application includes JWT-based authentication, role-based authorization, URL
 
 ---
 
-## ⚙️ Application Flow
+##  Application Flow
 
 1. User creates an account.
 2. User logs into the application.
@@ -72,7 +72,7 @@ The application includes JWT-based authentication, role-based authorization, URL
 
 ---
 
-## 👥 User Roles
+##  User Roles
 
 ### Normal User
 
@@ -87,7 +87,7 @@ The application includes JWT-based authentication, role-based authorization, URL
 
 ---
 
-## 📈 Analytics
+##  Analytics
 
 Each URL visit is recorded and stored in the database.
 
@@ -98,7 +98,7 @@ Tracked information:
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Login Page
 
@@ -118,7 +118,7 @@ Tracked information:
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Clone the Repository
 
@@ -153,7 +153,7 @@ http://localhost:8001
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Password hashing using bcrypt
 - Custom URL aliases
@@ -164,6 +164,6 @@ http://localhost:8001
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Kumkum Kamthan**
